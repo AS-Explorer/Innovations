@@ -6,11 +6,9 @@
 //  Copyright © 2017 Afsha. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LabelBorderAnimationVC.h"
 
-#define DocumentDirectory ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0])
-
-@interface ViewController ()
+@interface LabelBorderAnimationVC ()
 {
     UIBezierPath *path;
     CAShapeLayer *shapeLayer;
@@ -21,7 +19,7 @@
 
 @end
 
-@implementation ViewController
+@implementation LabelBorderAnimationVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,25 +34,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-//-(void)viewWillDisappear:(BOOL)animated{
-//    [super viewWillDisappear:animated];
-//    
-//
-//    
-//    NSMutableArray *finalMutable = [[NSMutableArray alloc] initWithObjects:@"hello",@"hi" ,nil];
-//    NSArray *finalIndex = [[NSMutableArray alloc] initWithObjects:@"bye",@"tata" ,nil];
-//    
-//    NSString *documentsDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
-//    
-//    NSString *rangePath = [documentsDir stringByAppendingPathComponent:@"Range.plist"];
-//    NSString *indexPath = [documentsDir stringByAppendingPathComponent:@"Select.plist"];
-//    
-//    [finalMutable writeToFile:rangePath atomically:YES];
-//    [finalIndex writeToFile:indexPath atomically:YES];
-//}
-
 - (IBAction)removeBorder:(id)sender {
-    //[shapeLayer removeFromSuperlayer];
+    [shapeLayer removeFromSuperlayer];
 }
 
 -(void)startAnimation{

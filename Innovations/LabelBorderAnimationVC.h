@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+//static NSString *storyboardIdentifier = @"LabelBorderAnimationVC";
 
+@interface LabelBorderAnimationVC : UIViewController
 
 @end
 

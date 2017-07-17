@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		6BBCCCA81F18BA5600556D07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBCCCA71F18BA5600556D07 /* main.m */; };
 		6BBCCCAB1F18BA5600556D07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBCCCAA1F18BA5600556D07 /* AppDelegate.m */; };
-		6BBCCCAE1F18BA5600556D07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBCCCAD1F18BA5600556D07 /* ViewController.m */; };
+		6BBCCCAE1F18BA5600556D07 /* LabelBorderAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBCCCAD1F18BA5600556D07 /* LabelBorderAnimationVC.m */; };
 		6BBCCCB11F18BA5600556D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBCCCAF1F18BA5600556D07 /* Main.storyboard */; };
 		6BBCCCB31F18BA5600556D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BBCCCB21F18BA5600556D07 /* Assets.xcassets */; };
 		6BBCCCB61F18BA5600556D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBCCCB41F18BA5600556D07 /* LaunchScreen.storyboard */; };
 		6BCE856B1F1B7586003B4620 /* TextCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCE856A1F1B7586003B4620 /* TextCVCell.swift */; };
+		6BE673061F1C9804003D3618 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE673051F1C9804003D3618 /* MenuViewController.swift */; };
 		6BEC37941F1A9DD30009DF10 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC37931F1A9DD30009DF10 /* Model.m */; };
 		6BEC37971F1A9DFA0009DF10 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC37961F1A9DFA0009DF10 /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
@@ -23,13 +24,14 @@
 		6BBCCCA71F18BA5600556D07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BBCCCA91F18BA5600556D07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6BBCCCAA1F18BA5600556D07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6BBCCCAC1F18BA5600556D07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6BBCCCAD1F18BA5600556D07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6BBCCCAC1F18BA5600556D07 /* LabelBorderAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelBorderAnimationVC.h; sourceTree = "<group>"; };
+		6BBCCCAD1F18BA5600556D07 /* LabelBorderAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelBorderAnimationVC.m; sourceTree = "<group>"; };
 		6BBCCCB01F18BA5600556D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BBCCCB21F18BA5600556D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BBCCCB51F18BA5600556D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BBCCCB71F18BA5600556D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BCE856A1F1B7586003B4620 /* TextCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCVCell.swift; sourceTree = "<group>"; };
+		6BE673051F1C9804003D3618 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		6BEC37921F1A9DD30009DF10 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		6BEC37931F1A9DD30009DF10 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		6BEC37951F1A9DF90009DF10 /* Innovations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Innovations-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -68,8 +70,8 @@
 			children = (
 				6BBCCCA91F18BA5600556D07 /* AppDelegate.h */,
 				6BBCCCAA1F18BA5600556D07 /* AppDelegate.m */,
-				6BBCCCAC1F18BA5600556D07 /* ViewController.h */,
-				6BBCCCAD1F18BA5600556D07 /* ViewController.m */,
+				6BBCCCAC1F18BA5600556D07 /* LabelBorderAnimationVC.h */,
+				6BBCCCAD1F18BA5600556D07 /* LabelBorderAnimationVC.m */,
 				6BBCCCAF1F18BA5600556D07 /* Main.storyboard */,
 				6BBCCCB21F18BA5600556D07 /* Assets.xcassets */,
 				6BBCCCB41F18BA5600556D07 /* LaunchScreen.storyboard */,
@@ -80,6 +82,7 @@
 				6BEC37961F1A9DFA0009DF10 /* SwiftViewController.swift */,
 				6BEC37951F1A9DF90009DF10 /* Innovations-Bridging-Header.h */,
 				6BCE856A1F1B7586003B4620 /* TextCVCell.swift */,
+				6BE673051F1C9804003D3618 /* MenuViewController.swift */,
 			);
 			path = Innovations;
 			sourceTree = "<group>";
@@ -164,9 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BBCCCAE1F18BA5600556D07 /* ViewController.m in Sources */,
+				6BBCCCAE1F18BA5600556D07 /* LabelBorderAnimationVC.m in Sources */,
 				6BCE856B1F1B7586003B4620 /* TextCVCell.swift in Sources */,
 				6BBCCCAB1F18BA5600556D07 /* AppDelegate.m in Sources */,
+				6BE673061F1C9804003D3618 /* MenuViewController.swift in Sources */,
 				6BBCCCA81F18BA5600556D07 /* main.m in Sources */,
 				6BEC37971F1A9DFA0009DF10 /* SwiftViewController.swift in Sources */,
 				6BEC37941F1A9DD30009DF10 /* Model.m in Sources */,
@@ -220,6 +224,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -239,6 +244,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = Innovations;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -269,6 +275,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -281,6 +288,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = Innovations;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
