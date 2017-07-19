@@ -15,6 +15,8 @@
 		6BBCCCB61F18BA5600556D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BBCCCB41F18BA5600556D07 /* LaunchScreen.storyboard */; };
 		6BCE856B1F1B7586003B4620 /* TextCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BCE856A1F1B7586003B4620 /* TextCVCell.swift */; };
 		6BE673061F1C9804003D3618 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE673051F1C9804003D3618 /* MenuViewController.swift */; };
+		6BE673081F1CC9CF003D3618 /* CustomBorderViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE673071F1CC9CF003D3618 /* CustomBorderViewVC.swift */; };
+		6BE6730A1F1CD433003D3618 /* SemiCircularBorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE673091F1CD433003D3618 /* SemiCircularBorderView.swift */; };
 		6BEC37941F1A9DD30009DF10 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC37931F1A9DD30009DF10 /* Model.m */; };
 		6BEC37971F1A9DFA0009DF10 /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC37961F1A9DFA0009DF10 /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,8 @@
 		6BBCCCB71F18BA5600556D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BCE856A1F1B7586003B4620 /* TextCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCVCell.swift; sourceTree = "<group>"; };
 		6BE673051F1C9804003D3618 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		6BE673071F1CC9CF003D3618 /* CustomBorderViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBorderViewVC.swift; sourceTree = "<group>"; };
+		6BE673091F1CD433003D3618 /* SemiCircularBorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemiCircularBorderView.swift; sourceTree = "<group>"; };
 		6BEC37921F1A9DD30009DF10 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		6BEC37931F1A9DD30009DF10 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		6BEC37951F1A9DF90009DF10 /* Innovations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Innovations-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 				6BEC37951F1A9DF90009DF10 /* Innovations-Bridging-Header.h */,
 				6BCE856A1F1B7586003B4620 /* TextCVCell.swift */,
 				6BE673051F1C9804003D3618 /* MenuViewController.swift */,
+				6BE673071F1CC9CF003D3618 /* CustomBorderViewVC.swift */,
+				6BE673091F1CD433003D3618 /* SemiCircularBorderView.swift */,
 			);
 			path = Innovations;
 			sourceTree = "<group>";
@@ -167,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE673081F1CC9CF003D3618 /* CustomBorderViewVC.swift in Sources */,
 				6BBCCCAE1F18BA5600556D07 /* LabelBorderAnimationVC.m in Sources */,
 				6BCE856B1F1B7586003B4620 /* TextCVCell.swift in Sources */,
 				6BBCCCAB1F18BA5600556D07 /* AppDelegate.m in Sources */,
@@ -174,6 +181,7 @@
 				6BBCCCA81F18BA5600556D07 /* main.m in Sources */,
 				6BEC37971F1A9DFA0009DF10 /* SwiftViewController.swift in Sources */,
 				6BEC37941F1A9DD30009DF10 /* Model.m in Sources */,
+				6BE6730A1F1CD433003D3618 /* SemiCircularBorderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

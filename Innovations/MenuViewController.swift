@@ -10,12 +10,14 @@ import UIKit
 
 enum MenuType : Int{
     case AnimationLabelBorder
+    case SemiCicularBorderView
+    case CustomTextFieldView
 }
 
 class MenuViewController: UIViewController {
 
     @IBOutlet weak var menuTableView : UITableView!
-    var menuContent : [MenuType] = [.AnimationLabelBorder]
+    var menuContent : [MenuType] = [.AnimationLabelBorder, .SemiCicularBorderView, .CustomTextFieldView]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +32,20 @@ class MenuViewController: UIViewController {
     }
     
     fileprivate func instantiateVCFor(contentType : MenuType){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         switch contentType {
             case .AnimationLabelBorder:
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 guard let controller = storyboard.instantiateViewController(withIdentifier: "LabelBorderAnimationVC") as? LabelBorderAnimationVC else { fatalError() }
+                self.navigationController?.pushViewController(controller, animated: true)
+            break
+            
+            case .SemiCicularBorderView:
+                guard let controller = storyboard.instantiateViewController(withIdentifier: "CustomBorderViewVC") as? CustomBorderViewVC else { fatalError() }
+                self.navigationController?.pushViewController(controller, animated: true)
+            break
+            
+            case .CustomTextFieldView:
+                guard let controller = storyboard.instantiateViewController(withIdentifier: "SwiftVC") as? SwiftViewController else { fatalError() }
                 self.navigationController?.pushViewController(controller, animated: true)
             break
         }
@@ -55,16 +67,21 @@ extension MenuViewController : UITableViewDelegate, UITableViewDataSource{
             case .AnimationLabelBorder:
                 cell.textLabel?.text = "AnimationLabelBorder"
             break
+            
+            case .SemiCicularBorderView:
+                cell.textLabel?.text = "SemiCicularBorderView"
+            break
+            
+            case .CustomTextFieldView:
+                cell.textLabel?.text = "CustomTextFieldView"
+            break
+            
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch menuContent[indexPath.row] {
-            case .AnimationLabelBorder:
-                self.instantiateVCFor(contentType: .AnimationLabelBorder)
-            break
-        }
+        self.instantiateVCFor(contentType: menuContent[indexPath.row])
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

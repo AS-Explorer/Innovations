@@ -30,7 +30,6 @@
     shapeLayer.fillColor = [[UIColor clearColor] CGColor];
 
     [_textLabel addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(startAnimation)]];
-    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

@@ -13,8 +13,6 @@ class SwiftViewController: UIViewController {
     @IBOutlet weak var collectionView : UICollectionView!
     @IBOutlet weak var textField : UITextField!
 
-    var datePicker : UIDatePicker = UIDatePicker()
-    var tempModel : Model?
     var items : [String] = []
     
     
@@ -22,11 +20,7 @@ class SwiftViewController: UIViewController {
         super.viewDidLoad()
         
         collectionView.register(TextCVCell.self, forCellWithReuseIdentifier: TextCVCell.reuseIdentifier)
-        tempModel = Model.init()
         
-        if let model = tempModel, tempModel?.date != nil{
-            datePicker.date = model.date
-        }
         // Do any additional setup after loading the view.
     }
 
