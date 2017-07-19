@@ -7,8 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "Innovations-Swift.h"
 
 @interface AppDelegate ()
+
+@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (strong, nonatomic) UINavigationController *navigationController;
 
 @end
 
@@ -17,6 +21,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] init];
+    [self.window makeKeyAndVisible];
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    MenuViewController *menuVC = [storyBoard instantiateViewControllerWithIdentifier:@"MenuVC"];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:menuVC];
+//    self.tabBarController = [[UITabBarController alloc] init];
+//    self.tabBarController.viewControllers = @[self.navigationController];
+    self.window.rootViewController = self.navigationController;//self.tabBarController;
+
     return YES;
 }
 
